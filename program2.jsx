@@ -6,7 +6,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('Enter an integer: ', (input) => {
-    const number = parseInt(input, 10);
+    const number = parseInt(input, 12);
 
     if (!isNaN(number)) {
         console.log(`You entered: ${number}`);
