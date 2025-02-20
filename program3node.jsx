@@ -5,7 +5,7 @@ var rl = rdl.createInterface({
 });
 
 var arr = [1, 2];
-console.log("hello1");
+console.log("hello2");
 
 let i = 0;
 
@@ -21,10 +21,10 @@ function askNumber() {
             }
             console.log(arr);
             i++;
-            askNumber(); // Recursive call for next input
+            askNumber();
         });
     } else {
-        rl.close(); // Close readline after all inputs
+        rl.close();
     }
 }
 
