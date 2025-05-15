@@ -1,18 +1,14 @@
 const readline = require('readline');
-
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+input: process.stdin,
+output: process.stdout
 });
-
 rl.question('Enter an integer: ', (input) => {
-    const number = parseInt(input, 12);
-
-    if (!isNaN(number)) {
-        console.log(`You entered: ${number}`);
-    } else {
-        console.log('Invalid input. Please enter a valid integer.');
-    }
-
-    rl.close();
+const number = parseInt(input, 10);
+if (!isNaN(number)) {
+console.log(`You entered: ${number}`);
+} else {
+console.log('Invalid input. Please enter a valid integer.');
+}
+rl.close();
 });
